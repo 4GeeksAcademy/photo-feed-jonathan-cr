@@ -19,7 +19,7 @@
     .grid-img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Cambiado a cover para llenar el contenedor */
+            object-fit: cover; 
             aspect-ratio: 1 / 1;
         }
         .row {
@@ -32,13 +32,14 @@
             justify-content: center;
             align-items: center;
             padding: 5px;
-            ; /* Forzamos la relación de aspecto 1:1 (cuadrado) */
+            ; 
         }
 
         #individual-view {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            }
     </style>
     </style>
   </head>
@@ -50,7 +51,7 @@
         <span class="h5 mb-0 px-1 fs-4">Instagram</span>
       </div>
       <div class="d-flex">
-        <!-- Botón para abrir el modal -->
+        <!-- modal -->
         <button
           class="btn btn-success me-2"
           data-bs-toggle="modal"
@@ -59,7 +60,7 @@
           Crear un nuevo post
         </button>
 
-        <!-- Dropdown de configuración -->
+        <!-- Dropdown  -->
         <div class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
@@ -84,7 +85,7 @@
       </div>
     </nav>
 
-    <!-- Modal -->
+    <!-- Modal config -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -106,7 +107,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- Aquí puedes colocar el formulario o contenido del modal -->
+        
             <form>
               <div class="mb-3">
                 <label for="postTitle" class="form-label"
@@ -150,7 +151,7 @@
       </div>
     </div>
 
-    <!-- Botones del carrusel -->
+   
     <div class="container text-center mt-3">
       <div class="btn-group" role="group">
         <button class="btn btn-outline-dark active" id="btn-individual">
@@ -162,9 +163,9 @@
       </div>
     </div>
 
-    <!-- Contenedor del carrusel -->
+
     <div class="container mt-3" id="content">
-      <!-- Vista Individual -->
+   
       <div id="individual-view">
         <!-- Card 1 -->
         <div class="card mb-3 mx-auto" style="width: 500px">
